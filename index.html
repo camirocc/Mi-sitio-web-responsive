@@ -2,47 +2,71 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Camila Rocca</title>
 </head>
 <body>
     <div class="wrapper">
+        <!-- Navbar con clases de Bootstrap -->
         <header>
-            <nav class="navbar">
-                <div class="brand">
-                    <h1>CAMILA ROCCA</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">CAMILA ROCCA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#sobre-mi">Sobre mi</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
             </nav>
         </header>
-        <main class="main">
-            <div class="info">
-                <h2>TITULITO</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, vel esse delectus illum voluptatem ullam magni,
-                 nemo eius recusandae explicabo necessitatibus quas voluptas voluptates! 
-                 Blanditiis vitae tempora perspiciatis ad facere..
-                </p>
-            </div>
-            <img src="cami.jpg" alt="imagen de Camila cocinando">
-        </main>
-    </div>
-    <div class="about">
         
-        <div class="about-info" id="sobre-mi"> <!-- Corrección aquí -->
-            <h2>Sobre mi</h2>
-            <div class="divider"></div>
-            <p>Mi nombre es Camila Rocca y me encanta incursionar en el mundo de la cocina, especialmente en repostería.
-                Mi pasión por cocinar se extiende más allá de lo básico; me encanta explorar nuevas recetas y técnicas para sorprender
-                con sabores y presentaciones únicas. 
-                La cocina es mi lienzo y la repostería mi forma de expresión, buscando siempre mezclar ingredientes con arte y amor.
-            </p>
-            <img src="cami2.jpg" alt="imagen de Camila cocinando" >
+        <!-- Main content -->
+        <main class="main container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>TITULITO</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, vel esse delectus illum voluptatem ullam magni,
+                    nemo eius recusandae explicabo necessitatibus quas voluptas voluptates! Blanditiis vitae tempora perspiciatis ad facere..
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="cami.jpg" alt="imagen de Camila cocinando" class="img-fluid rounded">
+                </div>
+            </div>
+        </main>
+        
+        <!-- Sección sobre mi -->
+        <div class="about container mt-5">
+            <div class="about-info" id="sobre-mi">
+                <h2>Sobre mi</h2>
+                <div class="divider mb-4"></div>
+                <p>Mi nombre es Camila Rocca y me encanta incursionar en el mundo de la cocina, especialmente en repostería.
+                    Mi pasión por cocinar se extiende más allá de lo básico; me encanta explorar nuevas recetas y técnicas para sorprender
+                    con sabores y presentaciones únicas. La cocina es mi lienzo y la repostería mi forma de expresión, buscando siempre mezclar ingredientes con arte y amor.
+                </p>
+                <img src="cami2.jpg" alt="imagen de Camila cocinando" class="img-fluid rounded-circle">
+            </div>
         </div>
     </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

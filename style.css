@@ -72,4 +72,18 @@ h2{
     margin: 10px auto;        /* Centra la imagen y agrega espacio alrededor */
     border-radius: 4px;
     width: 250px;
-    height:250px;      /* Bordes redondeados en la imagen */}
+    height:250px;      /* Bordes redondeados en la imagen */
+}
+
+/* Personalización para que la imagen de la sección principal no se expanda demasiado */
+.main img {
+    max-width: 350px; /* Limitar tamaño máximo de la imagen */
+    height: auto;
+}
+
+/* Ajustes adicionales */
+#sobre-mi img {
+    max-width: 250px; /* Limitar tamaño máximo de la imagen de "Sobre mi" */
+    height: auto;
+    margin: 10px auto;
+}
